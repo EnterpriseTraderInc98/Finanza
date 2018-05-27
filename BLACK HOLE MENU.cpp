@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     bool Func1=false, Func2=false, Func3=false, Func4=false, Func5=false, Func6=false, Func7=false,loop=false;
-    int Selezione;
+    int Selezione,Estenzione=0;
     do {
     system("clear");
     cout << "\t\t\tBlackHole Menu" << boolalpha
@@ -18,6 +18,7 @@ int main()
     <<"\n5.\tFUNZIONE\tStatus: " << Func5
     <<"\n6.\tFUNZIONE\tStatus: " << Func6
     <<"\n7.\tFUNZIONE\tStatus: " << Func7
+    <<"\n8.\tEstenzione\tOnda: " << Estenzione
     <<"\n\n\t\t\t Seleziona FUNZIONE : ";
     cin >> Selezione;
     switch(Selezione)
@@ -27,7 +28,7 @@ int main()
             string Scelta;
             cout << "(si/no)\tEnable Func1 : ";
             cin >> Scelta;
-            if (Scelta == "si") //Non funziona || linux
+            if (Scelta == "si") //Non funziona ||
             {
                 Func1 = true;
                 loop = true;
@@ -132,6 +133,13 @@ int main()
                 Func7 = false;
                 loop = true;
             }
+        }
+        case 8 :
+        {
+
+            cout << "Su quale onda si enstende : ";
+            cin >> Estenzione;
+            loop = true;
         }
         break;
     default :
